@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Габиб Намазов](https://up.htmlacademy.ru/htmlcss/26/user/1172763).
-* Наставник: [Елизавета Винокурова](https://htmlacademy.ru/profile/elivin).
+* Наставник: [Елизавета Винокурова](https://up.htmlacademy.ru/htmlcss/26/user/123355).
 
 ---
 
