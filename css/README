@@ -7,3 +7,50 @@
 css/
 | - style.css
 | - [другие *.css файлы]
+
+.logo {
+  width: 140px;
+  height: 71px;
+  object-fit: contain;
+}
+
+
+.background-photo {
+  width: 1200px;
+  height: 773px;
+  object-fit: contain;
+}
+
+.welcome {
+  width: 459px;
+  height: 353px;
+  object-fit: contain;
+}
+
+.logo-htmla {
+  width: 115px;
+  height: 41px;
+  object-fit: contain;
+  background-color: #231f20;
+}
+
+.icon-down-dir {
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+  background-color: #81b3d2;
+}
+
+.icon-up-dir {
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+  background-color: #cacaca;
+}
+
+.hotel-picture {
+  width: 135px;
+  height: 90px;
+  object-fit: contain;
+}
+
