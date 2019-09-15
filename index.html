@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <nav>
           <a>
               <img src="img/logo.svg"
-              class="logo" width: 140px; height: 71px; alt="Логотип Седоны">
+              class="logo" width="140" height="71" alt="Логотип Седоны">
           </a>
         <ul>
           <li><a href="info.html">Информация</a></li>
@@ -22,7 +22,7 @@
     </header>
     <main>
 
-      <h1>Город Седона</h1>
+      <h1 class="visually-hidden">Город Седона</h1>
 
       <!--img src="img/welcome.png"
      class="welcome" alt="Добро пожаловать в Седону"-->
@@ -33,14 +33,32 @@
       </section>
 
       <section>
-        <h2>Поиск гостиниц</h2>
+        <h2 class="visually-hidden">Поиск гостиниц</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемы даты поездки,<br>
         и мы покажем вам лучшие предложения гостниц в Седоне</p>
 
-        <a href="">Поиск гостиниц в Седоне</a>
+        <a href="" alt="Поиск гостиниц в Седоне">Поиск гостиниц в Седоне</a>
         <!--здесь будет форма-->
-
+        <form action="hotels.html" method="POST">
+          <p class="appointment-item">
+            <label for="arrival-date">Дата заезда:</label>
+            <input id="arrival-date" type="date" name="arrival-date" value="24 апреля 2017" placeholder="01 января 2017">
+          </p>
+          <p class="appointment-item">
+            <label for="date-of-departure">Дата выезда:</label>
+            <input id="date-of-departure" type="date" name="date-of-departure" value="4 июля 2017" placeholder="4 июля 2017">
+          </p>
+          <p class="appointment-item">
+            <label for="adults">Взрослые:</label>
+            <input id="adults" type="number" name="adults" value="2" placeholder="0">
+          </p>
+          <p class="appointment-item">
+            <label for="children">Дети:</label>
+            <input id="children" type="number" name="children" value="0" placeholder="0">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
 
       </section>
     </main>
@@ -50,13 +68,13 @@
       </p>
       <div>
       <ul>
-        <li><a href="#"><!--img src="img/tw-icon.svg" alt="Твиттер"-->TW</a></li>
-        <li><a href="#"><!--img src="img/fb-icon.svg" alt="Фейсбук"-->FB</a></li>
-        <li><a href="#"><!--img src="img/youtube-icon.svg" alt="Ютуб"-->YT</a></li>
+        <li><a href="#" class="tw-icon"><!--img src="img/tw-icon.svg" alt="Твиттер"-->TW</a></li>
+        <li><a href="#" class="fb-icon"><!--img src="img/fb-icon.svg" alt="Фейсбук"-->FB</a></li>
+        <li><a href="#" class="youtube-icon"><!--img src="img/youtube-icon.svg" alt="Ютуб"-->YT</a></li>
       </ul>
       </div>
       <p>
-        WEBSITE BY:<a href="https://htmlacademy.ru/intensive/htmlcss"><!--img src="img/logo-htmla.svg" class="logo-htmla"-->HTML Academy</a>
+        WEBSITE BY:<a href="https://htmlacademy.ru/intensive/htmlcss" alt="Логотип htmlacademy"><img src="img/logo-htmla.svg" class="logo-htmla" width="115" height="41"></a>
       </p>
     </footer>
   </body>
