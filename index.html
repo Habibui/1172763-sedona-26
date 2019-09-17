@@ -44,18 +44,18 @@
           <p class="appointment-item">
             <label for="arrival-date">Дата заезда:</label>
             <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" placeholder="01 января 2017">
-            <button class="button" type="button"><img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"></button>
+            <button class="button" type="button"><svg xmlns="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"></button>
           </p>
           <p class="appointment-item">
             <label for="date-of-departure">Дата выезда:</label>
             <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017" placeholder="4 июля 2017">
-            <button class="button" type="button"><img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"></button>
+            <button class="button" type="button"><!--img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"--></button>
           </p>
           <p class="appointment-item">
             <label for="adults">Взрослые:</label>
-            <button class="button" type="button">-</button>
+            <button class="button" type="button" aria-label="Уменьшить количество">-</button>
             <input id="adults" type="text" name="adults" value="2" placeholder="0">
-            <button class="button" type="button">+</button>
+            <button class="button" type="button" aria-label="Увелчить количество">+</button>
           </p>
           <p class="appointment-item">
             <label for="children">Дети:</label>
@@ -74,9 +74,9 @@
       </p>
       <div>
       <ul>
-        <li><a href="#" class="tw-icon visually-hidden"><!--img src="img/tw-icon.svg" alt="Твиттер"-->Twitter</a></li>
-        <li><a href="#" class="fb-icon visually-hidden"><!--img src="img/fb-icon.svg" alt="Фейсбук"-->Facebook</a></li>
-        <li><a href="#" class="youtube visually-hidden"><!--img src="img/youtube-icon.svg" alt="Ютуб"-->YouTube</a></li>
+        <li><a href="https://twitter.com/" class="tw-icon" aria-label="Twitter"><!--img src="img/tw-icon.svg" alt="Твиттер"-->#</a></li>
+        <li><a href="https://facebook.com/" class="fb-icon" aria-label="Facebook"><!--img src="img/fb-icon.svg" alt="Фейсбук"-->#</a></li>
+        <li><a href="https://youtube.com/" class="youtube" aria-label="YouTube"><!--img src="img/youtube-icon.svg" alt="Ютуб"-->#</a></li>
       </ul>
       </div>
       <p>
