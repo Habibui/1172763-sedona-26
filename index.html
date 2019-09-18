@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -42,26 +44,26 @@
         <!--здесь будет форма-->
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p class="appointment-item">
-            <label for="arrival-date">Дата заезда:</label>
+            <label for="arrival-date"><span class="visually-hidden">Выбор даты заезда</span>Дата заезда:</label>
             <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" placeholder="01 января 2017">
-            <button class="button" type="button"><svg xmlns="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"></button>
+            <button class="button" type="button"></button>
           </p>
           <p class="appointment-item">
-            <label for="date-of-departure">Дата выезда:</label>
+            <label for="date-of-departure"><span class="visually-hidden">Выбор даты выезда</span>Дата выезда:</label>
             <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017" placeholder="4 июля 2017">
             <button class="button" type="button"><!--img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"--></button>
           </p>
           <p class="appointment-item">
             <label for="adults">Взрослые:</label>
-            <button class="button" type="button" aria-label="Уменьшить количество">-</button>
-            <input id="adults" type="text" name="adults" value="2" placeholder="0">
-            <button class="button" type="button" aria-label="Увелчить количество">+</button>
+            <button class="button" type="button" aria-label="Уменьшить количество"></button>
+            <input id="adults" type="number" name="adults" value="2" placeholder="0">
+            <button class="button" type="button" aria-label="Увелчить количество"></button>
           </p>
           <p class="appointment-item">
             <label for="children">Дети:</label>
-            <button class="button" type="button">-</button>
-            <input id="children" type="text" name="children" value="0" placeholder="0">
-            <button class="button" type="button">+</button>
+            <button class="button" type="button"></button>
+            <input id="children" type="number" name="children" value="0" placeholder="0">
+            <button class="button" type="button"></button>
           </p>
           <button class="button" type="submit">Найти</button>
         </form>
@@ -73,11 +75,11 @@
         #VISITSEDONA
       </p>
       <div>
-      <ul>
-        <li><a href="https://twitter.com/" class="tw-icon" aria-label="Twitter"><!--img src="img/tw-icon.svg" alt="Твиттер"-->#</a></li>
-        <li><a href="https://facebook.com/" class="fb-icon" aria-label="Facebook"><!--img src="img/fb-icon.svg" alt="Фейсбук"-->#</a></li>
-        <li><a href="https://youtube.com/" class="youtube" aria-label="YouTube"><!--img src="img/youtube-icon.svg" alt="Ютуб"-->#</a></li>
-      </ul>
+        <ul>
+          <li><a href="https://twitter.com/" class="tw-icon" aria-label="Twitter"><span class="visually-hidden">Twitter</span>https://twitter.com/</a></li>
+          <li><a href="https://facebook.com/" class="fb-icon" aria-label="Facebook"><span class="visually-hidden">Facebook</span>https://facebook.com/</a></li>
+          <li><a href="https://youtube.com/" class="youtube" aria-label="YouTube"><span class="visually-hidden">YouTube</span>https://youtube.com/</a></li>
+        </ul>
       </div>
       <p>
         WEBSITE BY:<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" class="logo-htmla" width="115" height="41"></a>
