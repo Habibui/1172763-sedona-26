@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="hotels">
     <header>
-      <nav>
+      <nav class="main-navigation">
           <a href="index.html">
             <img src="img/logo.svg" class="logo" width="140" height="71" alt="Логотип Седоны">
           </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo&video.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
@@ -20,12 +22,12 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Поиск приемлемого жилья</h1>
-        <!--img src="img/background-photo.png"
-        class="background-photo"-->
 
-      <section>
-      <h2>Сответствующие критериям гостиницы</h2>
+      <h1 class="visually-hidden">Поиск приемлемого жилья</h1>
+
+      <section class="criteria">
+      <h2 class="visually-hidden">Сответствующие критериям гостиницы</h2>
+      <p>Сортировка:</p>
         <ul>
           <li><a>По цене</a></li>
           <li><a href="">По типу</a></li>
@@ -39,7 +41,7 @@
       class="icon-down-dir" alt="иконка вниз"--></a>
 
 
-      <p>найдено: 3</p>
+      <p class="results">найдено: 3</p>
         <ul><!--добавить цены и описание с картинками и кнопки-->
           <li>
             <h3><a href"">amara resort & spa</a></h3>
@@ -49,8 +51,8 @@
               <p>гостиница</p>
               <p>от 4000 рублей</p>
               <p>
-                <a href="">подробнее</a>
-                <a href="">забронировать</a>
+                <a href="" class="information">подробнее</a>
+                <a href="" class="reserv">забронировать</a>
               </p>
 
             <p><span class="visually-hidden">гостиница 4 звезды</span></p>
@@ -59,31 +61,32 @@
           </li>
 
           <li>
-              <h3>desert quail inn</h3>
+            <h3><a href"">desert quail inn</a></h3>
               <p>
                 <img src="img/hotel-picture-2.jpg"
                 class="hotel-picture" width="135" height="90" alt="фото мотеля">
               </p>
-                <p>мотель</p>
-                <p>от 3000 рублей</p>
-                <p>
-                  <a href="">подробнее</a>
-                  <a href="">забронироваь</a>
+              <p>мотель</p>
+              <p>от 3000 рублей</p>
+              <p>
+                <a href="" class="information">подробнее</a>
+                <a href="" class="reserv">забронироваь</a>
               </p>
 
               <p><span class="visually-hidden">гостиница 3 звезды</span></p>
               <p>рейтинг: 8.9</p>
           </li>
 
-            <li>
-                <h3>villas at poco diablo</h3>
-                <p><img src="img/hotel-picture-3.jpg"
-                  class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
-             </p>
+          <li>
+            <h3><a href"">villas at poco diablo</a></h3>
+              <p>
+                <img src="img/hotel-picture-3.jpg"
+                class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
+              </p>
                   <p>аппартаменты</p>
                   <p>от 2000 рублей</p>
-                  <p><a href="">подробнее</a></p>
-                  <p><a href="">забронировать</a></p>
+                  <p><a href="" class="information">подробнее</a></p>
+                  <p><a href="" class="reserv">забронировать</a></p>
 
                   <p><span class="visually-hidden">гостиница 2 звезды</span></p>
                   <p>рейтинг: 9.2</p>
@@ -93,19 +96,21 @@
     </main>
 
     <footer>
+        <div class="white-back"></div>
         <p>
-            #VISITSEDONA
+          #VISITSEDONA
         </p>
         <div>
-          <ul>
-            <li><a href="https://twitter.com/" class="tw-icon" aria-label="Twitter"><span class="visually-hidden">Twitter</span>https://twitter.com/</a></li>
-            <li><a href="https://facebook.com/" class="fb-icon" aria-label="Facebook"><span class="visually-hidden">Facebook</span>https://facebook.com/</a></li>
-            <li><a href="https://youtube.com/" class="youtube" aria-label="YouTube"><span class="visually-hidden">YouTube</span>https://youtube.com/</a></li>
+          <ul class="social-networks">
+            <li><a href="https://twitter.com/" class="social-button" aria-label="Twitter"><span class="visually-hidden">Twitter</span>https://twitter.com/</a></li>
+            <li><a href="https://facebook.com/" class="social-button" aria-label="Facebook"><span class="visually-hidden">Facebook</span>https://facebook.com/</a></li>
+            <li><a href="https://youtube.com/" class="social-button" aria-label="YouTube"><span class="visually-hidden">YouTube</span>https://youtube.com/</a></li>
           </ul>
         </div>
-        <p>
-          WEBSITE BY:<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" class="logo-htmla" weight="115" height="41"></a>
+        <p class="author">
+          WEBSITE BY:<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" class="logo-htmla" width="115" height="41"></a>
         </p>
-    </footer>
+        </div>
+      </footer>
   </body>
 </html>
