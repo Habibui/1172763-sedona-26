@@ -5,12 +5,12 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("C:/Users/Джавид/Documents/GitHub/1172763-sedona-26/img/background-photo.jpg");
+  background-image: url("1172763-sedona-26/img/background-photo.jpg");
   width: 1200px;
   height: 216px;
   background-position: top center;
@@ -26,26 +26,9 @@ footer {
   background-color: #ffffff;
 }
 
-.hotels {
-  background-image: url("c:/Users/Джавид/Documents/GitHub/1172763-sedona-26/img/filter-background.jpg");
-}
-
-.description {
-  background-image: url("c:/Users/Джавид/Documents/GitHub/1172763-sedona-26/img/welcome.png");
-  line-height: 26px;
-  width: 459px;
-  height: 353px;
-  text-align: center;
-}
-
-.description p {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400px;
-  color: #333333;
-}
 
 .main-navigation {
+  font-weight: 700;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -63,18 +46,22 @@ footer {
   color: #000000;
 }
 
-.site-navigation a:hover,
 .site-navigation a:focus,
-.social-networks a:hover,
-.social-networks a:focus {
-  background-color: #f2f2f2;/*Знаю, что в макете этого не видно - добавил на всякий*/
+.site-navigation a:hover {
+  color: #81b3d2;
 }
 
-.white-back {
-  background-color: #ffffff;
-  width: 1200px;
-  height: 216px;
-  text-align: center;
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.social-networks a:hover,
+.social-networks a:focus {
+  color: #669ec0;
+}
+
+.social-networks a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .visually-hidden {
@@ -88,45 +75,37 @@ footer {
   overflow: hidden;
 }
 
-.location {
-  background-image: url("c:/Users/Джавид/Documents/GitHub/1172763-sedona-26/img/map.jpg");
+.description {
+  background-image: url("1172763-sedona-26/img/welcome.png");
+  line-height: 26px;
+  width: 459px;
+  height: 353px;
+  text-align: center;
+}
+
+.description h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.background-white {
+  background-color: #ffffff;
   width: 1200px;
-  height: 593px;
-}
-
-.button {
-  font: inherit;
-
+  height: 216px;
   text-align: center;
-  /*color: #474646;*/
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  /*background-color: #928d8d;*/
-  border: none;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: orange;
-}
-
-.social-networks {
-  text-align: center;
-}
-
-.social-button {
-  color: #81b3d2;
-}
-
-.author {
-  text-align: right;
 }
 
 .interest {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -135,6 +114,83 @@ footer {
   line-height: 24px;
   color: #333333;
   text-align: center;
+}
+
+.location {
+  background-image: url("img/map.jpg");
+  width: 1200px;
+  height: 593px;
+}
+
+.button {
+  font: inherit;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button-brown {
+  background-color: #766357;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-big {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  opacity: 0.3;
+  background-color: #503e33;
+}
+
+/*Может объединить .social-button с button-blue?*/
+.social-button {
+  text-align: center;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  display: block;
+}
+
+.social-button:hover
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.created-by {
+  text-align: right;
 }
 
 .criteria ul {
@@ -153,20 +209,8 @@ footer {
   line-height: 26px;
 }
 
-.information {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-.reserv {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  background-color: #766357;
-  color: #ffffff;
+.hotels {
+  background-image: url("1172763-sedona-26/img/filter-background.jpg");
 }
 
 .criteria h3 {
@@ -175,52 +219,4 @@ footer {
   color: #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.background-photo {
-  width: 1200px;
-  height: 773px;
-}
-
-.logo-htmla {
-  width: 115px;
-  height: 41px;
-  background-color: #231f20;
-}
-
-.icon-down-dir {
-  width: 11px;
-  height: 10px;
-  background-color: #81b3d2;
-}
-
-.icon-up-dir {
-  width: 11px;
-  height: 10px;
-  background-color: #cacaca;
-}
-
-.star {
-  width: 18px;
-  height: 17px;
-}
-
-.hotel-picture {
-  width: 135px;
-  height: 90px;
-}
 
