@@ -7,7 +7,9 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
+  <div class="background-grey">
   <body>
+    <div class="container">
     <header>
       <nav class="main-navigation">
           <a>
@@ -24,33 +26,33 @@
     </header>
     <main>
 
-      <h1 class="visually-hidden">Город Седона</h1>
+      <div class="visually-hidden index-background">
+      <h1>Город Седона</h1>
+      </div>
 
-    <div class="description">
-      <section>
+      <section class="description">
         <h2>Седона небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-    </div>
 
-    <div class="background-white">
-      <section>
+      <section class="searching">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
         <p class="interest">Заинтересовались?</p>
         <p class="instruction">Укажите предполагаемы даты поездки,<br>
         и мы покажем вам лучшие предложения гостниц в Седоне</p>
 
         <a href="" class="button button-brown button-big">Поиск гостиниц в Седоне</a>
-        <form action="https://echo.htmlacademy.ru" method="POST" class="location">
+        <div class="form-decoration">
+        <form action="https://echo.htmlacademy.ru" method="POST" class="searching-form">
           <p class="appointment-item">
             <label for="arrival-date"><span class="visually-hidden">Выбор даты заезда</span>Дата заезда:</label>
             <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" placeholder="01 января 2017">
-            <button class="button" type="button"></button>
+            <button class="button calendar" type="button"></button>
           </p>
           <p class="appointment-item">
             <label for="date-of-departure"><span class="visually-hidden">Выбор даты выезда</span>Дата выезда:</label>
             <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017" placeholder="4 июля 2017">
-            <button class="button" type="button"><!--img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"--></button>
+            <button class="button calendar" type="button"><!--img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Календарь"--></button>
           </p>
           <p class="appointment-item">
             <label for="adults">Взрослые:</label>
@@ -64,13 +66,16 @@
             <input id="children" type="number" name="children" value="0" placeholder="0">
             <button class="button" type="button"></button>
           </p>
-          <a href="" class="button button-blue button-big" type="submit">Найти</a>
+          <button class="button button-blue button-big" type="submit">Найти</button>
         </form>
       </section>
+
+      <img src="img/map.jpg" class="map" width="1200" height="593" alt="Местоположение">
     </div>
+
     </main>
     <footer>
-      <div class="background-white"></div>
+      <div class="footer">
       <p>
         #VISITSEDONA
       </p>
@@ -86,5 +91,7 @@
       </p>
       </div>
     </footer>
+  </div>
   </body>
+</div>
 </html>

@@ -9,10 +9,6 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
-  background-image: url("1172763-sedona-26/img/background-photo.jpg");
-  width: 1200px;
-  height: 216px;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -21,11 +17,45 @@ a {
   text-decoration: none;
 }
 
+label {
+  font: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input {
+  font: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+input:focus,
+input:hover {
+  background-color: #ebebeb;
+}
+
+input:active {
+  background-color: #ffffff;
+}
+
 footer {
   color: #000000;
   background-color: #ffffff;
 }
 
+.background-grey {
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
 
 .main-navigation {
   font-weight: 700;
@@ -41,13 +71,17 @@ footer {
   list-style: none;
 }
 
-.site-navigation a,
+.site-navigation a {
+  color: #766357;
+}
+
+.site-navigation a[href],
 .social-networks a {
   color: #000000;
 }
 
-.site-navigation a:focus,
-.site-navigation a:hover {
+.site-navigation a[href]:focus,
+.site-navigation a[href]:hover {
   color: #81b3d2;
 }
 
@@ -75,12 +109,22 @@ footer {
   overflow: hidden;
 }
 
+.index-background {
+  background-image: url("../img/background-photo.jpg");
+}
+
+.hotels-background {
+  background-image: url("../img/filter-background.jpg");
+}
+
 .description {
-  background-image: url("1172763-sedona-26/img/welcome.png");
+  background-image: url("../img/welcome.png");
+  background-color: #ffffff;
   line-height: 26px;
   width: 459px;
   height: 353px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .description h2 {
@@ -95,11 +139,15 @@ footer {
   color: #333333;
 }
 
-.background-white {
-  background-color: #ffffff;
-  width: 1200px;
-  height: 216px;
+.searching {
   text-align: center;
+}
+
+.searching-form {
+  background-color: #ffffff;
+  /*Задать границы форме сейчас или когда буду строить сетки?*
+  width: 568px;
+  height: 395px;*/
 }
 
 .interest {
@@ -116,8 +164,17 @@ footer {
   text-align: center;
 }
 
-.location {
-  background-image: url("img/map.jpg");
+.calendar {
+  width: 21px;
+  height: 22px;
+}
+
+/*.calendar:hover,
+.calendar:focus {}
+
+.calendar:active {}
+*/
+.map {
   width: 1200px;
   height: 593px;
 }
@@ -156,7 +213,7 @@ footer {
 }
 
 .button-blue:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -166,7 +223,7 @@ footer {
 }
 
 .button-brown:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -185,7 +242,7 @@ footer {
 }
 
 .social-button:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -193,11 +250,11 @@ footer {
   text-align: right;
 }
 
-.criteria ul {
+.hotels-list ul {
   list-style: none;
 }
 
-.criteria p {
+.sort {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -209,14 +266,59 @@ footer {
   line-height: 26px;
 }
 
-.hotels {
-  background-image: url("1172763-sedona-26/img/filter-background.jpg");
+.criteria {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.criteria h3 {
+.criteria:hover,
+.criteria:focus {
+  color: #81b3d2;
+}
+
+.criteria:active {
+  color: #000000;
+}
+
+.hotels-name {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
 
+.hotels-name:hover,
+.hotels-name:focus {
+  color: #81b3d2;
+}
 
+.hotels-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.four-stars {
+  background-image: url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg");
+  background-position: right;
+
+  width: 18px;
+  height: 17px;
+  margin: 6px;
+}
+
+.three-stars {
+  background-image: url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg");
+  background-position: right;
+
+  width: 18px;
+  height: 17px;
+  margin: 6px;
+}
+
+.two-stars {
+  background-image: url("../img/star.svg"), url("../img/star.svg");
+  background-position: right;
+
+  width: 18px;
+  height: 17px;
+  margin: 6px;
+}
