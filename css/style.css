@@ -117,26 +117,96 @@ footer {
   background-image: url("../img/filter-background.jpg");
 }
 
-.description {
+.welcome {
   background-image: url("../img/welcome.png");
-  background-color: #ffffff;
-  line-height: 26px;
   width: 459px;
   height: 353px;
   text-align: center;
   margin: 0 auto;
 }
 
-.description h2 {
+.description {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.description p {
+.five-reasons {
+  list-style: none;
+}
+
+.reasons {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
+}
+
+.reason-one,
+.reason-two {
+  background-color: #81b3d2;
+}
+
+.reason-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reason-title-white {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.reason-description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.reason-description-white {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.common {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.common-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.common-title p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.appartment {
+  background-image: url("../img/icon-1.svg");
+  width: 75px;
+  height: 72px;
+}
+
+.food {
+  background-image: url("../img/icon-3.svg");
+  width: 74px;
+  height: 70px;
+}
+
+.souvenir {
+  background-image: url("../img/icon-2.svg");
+  width: 64px;
+  height: 76px;
 }
 
 .searching {
@@ -250,35 +320,90 @@ footer {
   text-align: right;
 }
 
+.range-field {
+  border: solid 2px white;
+}
+
+.checkbox-criteria p {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.checkbox-criteria label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.checkbox-criteria-input:active {
+  background-color: #6a6a6a;
+}
+
+.range-input {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.checkbox-criteria-button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: rgba(0, 1, 1, 0.2);
+}
+
+.checkbox-criteria-button:hover,
+.checkbox-criteria-button:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .hotels-list ul {
   list-style: none;
 }
 
 .sort {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .results {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 }
 
-.criteria {
+.housing-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.criteria a[href] {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.criteria:hover,
-.criteria:focus {
+.criteria a[href]:hover,
+.criteria a[href]:focus {
   color: #81b3d2;
 }
 
-.criteria:active {
+.criteria a[href]:active {
   color: #000000;
+}
+
+.criteria a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
 }
 
 .hotels-name {
@@ -294,6 +419,13 @@ footer {
 
 .hotels-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #f2f2f2;
 }
 
 .four-stars {

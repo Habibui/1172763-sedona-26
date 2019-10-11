@@ -23,19 +23,49 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="hotels-background">
 
-      <section class="visually-hidden hotels-background">
-      <h1>Поиск приемлемого жилья</h1>
+      <h1 class="visually-hidden">Поиск приемлемого жилья</h1>
+
+      <section class="checkbox-criteria">
+        <p>Инфраструктура:</p>
+        <input class="checkbox-criteria-input" type="checkbox" name="pool" id="pool-field" checked>
+        <label for="pool-field">Бассейн</label>
+
+        <input class="checkbox-criteria-input" type="checkbox" name="parking" id="parking-field">
+        <label for="pool-field">Парковка</label>
+
+        <input class="checkbox-criteria-input" type="checkbox" name="wi-fi" id="wi-fi-field">
+        <label for="wi-fi-field">Wi-Fi</label>
+
+        <p>Тип жилья:</p>
+        <input class="checkbox-criteria-input" type="checkbox" name="hotels" id="hotels-field" checked>
+        <label for="hotels-field">Гостиница</label>
+
+        <input class="checkbox-criteria-input" type="checkbox" name="motels" id="motels-field" checked>
+        <label for="motels-field">Мотель</label>
+
+        <input class="checkbox-criteria-input" type="checkbox" name="appartments" id="appartments-field" checked>
+        <label for="appartments-field">Аппартаметы</label>
+
+        <p>Стоимость в сутки (Р):</p>
+        <div class="range-field">
+        <label for="start-price-field" class="range">От</label>
+        <input type="number" class="range-input" name="start-price" id="start-price-field" value="0">
+
+        <label for="final-price-field" class="range">До</label>
+        <input type="number" class="range-input" name="final-price" id="final-price-field" value="3000">
+        </div>
+        <button class="checkbox-criteria-button" type="button">Показать</button>
       </section>
 
       <section class="hotels-list">
       <h2 class="visually-hidden">Сответствующие критериям гостиницы</h2>
       <p class="sort">Сортировка:</p>
-        <ul>
-          <li><a class="criteria">По цене</a></li>
-          <li><a href="" class="criteria">По типу</a></li>
-          <li><a href="" class="criteria">По рейтингу</a></li>
+        <ul class="criteria">
+          <li><a>По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По рейтингу</a></li>
         </ul>
 
       <a><!--img src="img/icon-up-dir.svg"
@@ -48,13 +78,13 @@
       <p class="results">найдено: 3</p>
         <ul><!--добавить цены и описание с картинками и кнопки-->
           <li>
-            <h3 class="hotels-name"><a href="">amara resort & spa</a></h3>
+            <h3><a href="" class="hotels-name">amara resort & spa</a></h3>
               <p>
                 <img src="img/hotel-picture-1.jpg"
                 class="hotel-picture" width="135" height="95" alt="фото гостиницы">
               </p>
-              <p>гостиница</p>
-              <p>от 4000 рублей</p>
+              <p class="housing-description">гостиница</p>
+              <p class="housing-description">от 4000 рублей</p>
               <p>
                 <a href="" class="button button-blue">подробнее</a>
                 <a href="" class="button button-brown">забронировать</a>
@@ -64,17 +94,17 @@
               <span class="visually-hidden">гостиница 4 звезды</span>
               <span class="four-stars"></span>
             </p>
-            <p>рейтинг: 8.5</p>
+            <p class="rating">рейтинг: 8.5</p>
           </li>
 
           <li>
-            <h3 class="hotels-name"><a href="">desert quail inn</a></h3>
+            <h3><a href="" class="hotels-name">desert quail inn</a></h3>
               <p>
                 <img src="img/hotel-picture-2.jpg"
                 class="hotel-picture" width="135" height="90" alt="фото мотеля">
               </p>
-              <p>мотель</p>
-              <p>от 3000 рублей</p>
+              <p class="housing-description">мотель</p>
+              <p class="housing-description">от 3000 рублей</p>
               <p>
                 <a href="" class="button button-blue">подробнее</a>
                 <a href="" class="button button-brown">забронировать</a>
@@ -84,17 +114,17 @@
                 <span class="visually-hidden">гостиница 3 звезды</span>
                 <span class="three-stars" alt="гостиница 3 звезды"></span>
               </p>
-              <p>рейтинг: 8.9</p>
+              <p class="rating">рейтинг: 8.9</p>
           </li>
 
           <li>
-            <h3 class="hotels-name"><a href="">villas at poco diablo</a></h3>
+            <h3><a href="" class="hotels-name">villas at poco diablo</a></h3>
               <p>
                 <img src="img/hotel-picture-3.jpg"
                 class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
               </p>
-                  <p>аппартаменты</p>
-                  <p>от 2000 рублей</p>
+                  <p class="housing-description">аппартаменты</p>
+                  <p class="housing-description">от 2000 рублей</p>
                   <p>
                     <a href="" class="button button-blue">подробнее</a>
                     <a href="" class="button button-brown">забронировать</a>
@@ -104,7 +134,7 @@
                     <span class="visually-hidden">гостиница 2 звезды</span>
                     <span class="two-stars" alt="гостиница 2 звезды"></span>
                   </p>
-                  <p>рейтинг: 9.2</p>
+                  <p class="rating">рейтинг: 9.2</p>
             </li>
         </ul>
       </section>
