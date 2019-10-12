@@ -321,6 +321,8 @@ footer {
 }
 
 .range-field {
+  width: 220px;
+  height: 32px;
   border: solid 2px white;
 }
 
@@ -338,11 +340,12 @@ footer {
   color: #ffffff;
 }
 
-.checkbox-criteria-input:active {
+.checkbox-criteria-input:disabled + label {
   background-color: #6a6a6a;
 }
 
 .range-input {
+  background-color: transparent;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -350,11 +353,14 @@ footer {
 }
 
 .checkbox-criteria-button {
+  width: 133px;
+  height: 32px;
+  border: solid 2px #ffffff;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-  background-color: rgba(0, 1, 1, 0.2);
+  background-color: transparent;
 }
 
 .checkbox-criteria-button:hover,
