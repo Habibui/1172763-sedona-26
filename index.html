@@ -7,8 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <div class="background-grey">
-  <body>
+  <body class="background-grey">
     <div class="container">
     <header>
       <nav class="main-navigation">
@@ -24,45 +23,46 @@
         </ul>
       </nav>
     </header>
-    <main class="index-background welcome">
+    <main class="welcome">
 
       <h1 class="visually-hidden">Город Седона</h1>
 
+      <section class="description-section">
         <h2 class="description">Седона небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="reasons">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="reasons-paragraph">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
 
-        <ul class="five-reasons">
-          <li class="reason-one">
+        <ul class="reasons">
+          <li class="reason-item-white">
             <h3 class="reason-title-white">Настоящий городок</h3>
             <p class="reason-description-white">#1</p>
             <p class="reason-description-white">
               Седона - не атракцион для туристов,<br>
               там течёт своя жизнь
             </p>
-            <img src="img/feature-picture.jpg" class="feature-picture" width="800" height="256" alt="Фото Седоны">
+
+            <div class="reason-photo">
+              <img src="img/feature-picture.jpg" class="feature-picture" width="800" height="256" alt="Фото Седоны">
+            </div>
 
             <ul class="common">
-              <li class="common-title">
-                <div class="appartment"></div>
-                Жильё
+              <li class="common-title appartment">
+                <span>Жильё</span>
                 <p>
                   Рекомендуем пожить в настоящем<br>
                   мотеле, всё как в кино!
                 </p>
               </li>
 
-              <li class="common-title">
-                <div class="food"></div>
-                Еда
+              <li class="common-title food">
+                <span>Еда</span>
                 <p>
                   Всегда заказывайте фирменный бургер,<br>
                   вы не разочаруетесь
                 </p>
               </li>
 
-              <li class="common-title">
-                <div class="souvenir"></div>
-                Сувениры
+              <li class="common-title souvenir">
+                <span>Сувениры</span>
                 <p>
                   Не только китайского, но и местного<br>
                   производства!
@@ -71,17 +71,20 @@
             </ul>
           </li>
 
-          <li class="reason-two">
+          <li class="reason-item-white">
             <h3 class="reason-title-white">Там есть мост дьявола</h3>
             <p class="reason-description-white">#2</p>
             <p class="reason-description-white">
               Да, по нему можно пройти! Если конечно<br>
               вы осмелетесь
             </p>
-            <img src="img/bridge.jpg" class="bridge" width="800" height="256" alt="Фото Моста Дьявола">
+
+            <div class="reason-photo">
+              <img src="img/bridge.jpg" class="bridge" width="800" height="256" alt="Фото Моста Дьявола">
+            </div>
           </li>
 
-          <li class="reason-three">
+          <li class="reason-item">
             <h3 class="reason-title">Небольшая площадь</h3>
             <p class="reason-description">#3</p>
             <p class="reason-description">
@@ -90,7 +93,7 @@
             </p>
           </li>
 
-          <li class="reason-four">
+          <li class="reason-item">
             <h3 class="reason-title">Красивая дорога</h3>
             <p class="reason-description">#4</p>
             <p class="reason-description">
@@ -99,7 +102,7 @@
             </p>
           </li>
 
-          <li class="reason-five">
+          <li class="reason-item">
             <h3 class="reason-title">Мало туристов</h3>
             <p class="reason-description">#5</p>
             <p class="reason-description">
@@ -108,6 +111,7 @@
             </p>
           </li>
         </ul>
+      </section>
 
       <section class="searching">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
@@ -167,5 +171,4 @@
     </footer>
   </div>
   </body>
-</div>
 </html>
