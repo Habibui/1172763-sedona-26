@@ -465,3 +465,51 @@ footer {
   height: 17px;
   margin: 6px;
 }
+
+/*Сеточные стили*/
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
+.main-header {
+  min-width: 1200px;
+  min-height: 71px;
+}
+
+.main-navigation {
+  display: flex;
+  min-width: 1200px;
+  min-height: 71px;
+}
+
+.info {
+  order: 1;
+  width: 239px;
+  height: 56px;
+}
+
+.gallery {
+  order: 2;
+  width: 239px;
+  height: 56px;
+}
+
+.logo {
+  order: 3;
+  width: 140px;
+  height: 71px;
+}
+
+.state-map {
+  order: 4;
+  width: 239px;
+  height: 56px;
+}
+
+.hotels {
+  order: 5;
+  width: 239px;
+  height: 56px;
+}
