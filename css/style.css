@@ -95,7 +95,6 @@ footer {
 }
 
 .social-networks a:active {
-  opacity: 0.3;
   background-color: #5496bd;
 }
 
@@ -111,12 +110,12 @@ footer {
 }
 
 .main {
-  background-image: url("../img/welcome.png"), url("../img/background-photo.jpg");
+  background-image: url("../img/welcome.png"), url("../img/polygon.svg"), url("../img/background-photo.jpg");
   text-align: center;
   margin: 0 auto;
   background-repeat: no-repeat;
-  padding-top: 450px;
-  background-position: center 76px, 0 -50px;
+  padding-top: 563px;
+  background-position: center 76px, center 506px, 0 -50px;
 }
 
 .description-section {
@@ -231,6 +230,12 @@ footer {
   background-color: #ffffff;
 }
 
+.searching-form input[type=number]::-webkit-inner-spin-button,
+.searching-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .interest {
   font-size: 30px;
   line-height: 36px;
@@ -246,44 +251,59 @@ footer {
 }
 
 .appointment-item-input {
-  width: 339px;
+  width: 343px;
   height: 38px;
+  margin-left: 17px;
+  padding: 0;
+  padding-left: 12px;
+}
+
+.arrival-input {
   margin-left: 21px;
 }
 
-.btn-calendar {
-  width: 21px;
-  height: 22px;
+.btn-calendar-arrival {
+  position: absolute;
+  left: 483px;
+  top: 82px;
+  width: 25px;
+  height: 26px;
+
+  background-color: #f2f2f2;
+}
+
+.btn-calendar-appointment {
+  position: absolute;
+  left: 483px;
+  top: 162px;
+  width: 25px;
+  height: 26px;
+
+  background-color: #f2f2f2;
 }
 
 .calendar-arrival {
-  background-image: url("../img/calendar.svg");
   position: absolute;
-
-  left: 483px;
-  top: 85px;
+  top: 1.5px;
+  left: 2.5px;
 }
 
 .calendar-appointment {
-  background-image: url("../img/calendar.svg");
   position: absolute;
-
-  left: 483px;
-  top: 165px;
+  top: 1.5px;
+  left: 2.5px;
+  fill: #cacaca;
 }
 
-.btn-calendar:hover path,
-.btn-calendar:focus path{
+.calendar-appointment:hover,
+.calendar-appointment:focus{
   fill: #000000;
 }
 
-.btn-calendar:active path{
+.calendar-appointment:active{
   fill: #81b3d2;
 }
 
-.btn-calendar path {
-  fill: #cacaca;
-}
 
 
 .map {
@@ -305,6 +325,8 @@ footer {
   text-transform: uppercase;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .button-brown {
@@ -342,7 +364,6 @@ footer {
   background-color: #503e33;
 }
 
-/*Может объединить .social-button с button-blue?*/
 .social-button {
   text-align: center;
   background-color: #81b3d2;
@@ -357,8 +378,8 @@ footer {
 }
 
 .social-button:active {
-  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+  fill-opacity: 0.3;
 }
 
 .created-by {
@@ -368,9 +389,27 @@ footer {
   text-align: right;
 }
 
+.website-by {
+  padding: 0;
+  margin: 0;
+  padding-top: 7px;
+}
+
 .creator-logo {
   width: 115px;
   height: 41px;
+  padding: 0;
+  margin: 0;
+  margin-left: 6px;
+}
+
+.creator-logo:hover,
+.creator-logo:focus {
+  fill: #81b3d2;
+}
+
+.creator-logo:active {
+  fill: #bdbbbc;
 }
 
 .form-filter {
@@ -480,11 +519,17 @@ footer {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #81b3d2;
 }
 
 .sort-link[href]:hover,
 .sort-link[href]:focus {
   color: #81b3d2;
+  padding: 0;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #81b3d2;
 }
 
 .sort-link[href]:active {
@@ -511,21 +556,23 @@ footer {
 
 .link-up path,
 .link-down path {
+  fill: #81b3d2;
+}
+
+.link-up[href] path,
+.link-down[href] path {
   fill: #cacaca;
 }
 
-/*.link-down {
-  fill: #81b3d2;
-}*/
 
 .link-up {
   margin-right: 12px;
 }
 
-.link-up:hover path,
-.link-up:focus path,
-.link-down:hover path,
-.link-down:focus path {
+.link-up:hover[href] path,
+.link-up:focus[href] path,
+.link-down:hover[href] path,
+.link-down:focus[href] path {
   fill: #000000;
 }
 
@@ -798,6 +845,28 @@ body {
 
 .flex-input-field {
   width: 38px;
+  padding-left: 16px;
+}
+
+.btn-minus,
+.btn-plus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+.btn-minus-line,
+.btn-plus-line {
+  content: "";
+  position: absolute;
+
+  top: 28px;
+
+  width: 12px;
+  height: 3px;
+
+  background: rgba(0, 1, 1, 0.15);
+  /*transform: translate -50%;*/
 }
 
 .btn-minus-adult {
