@@ -13,14 +13,22 @@
     <header class="main-header">
       <nav class="main-navigation">
           <a class="logo-link">
-              <img src="img/logo.svg"
+            <img src="img/logo.svg"
               class="logo" width="140" height="71" alt="Логотип Седоны">
           </a>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-          <li class="site-navigation-item"><a href="photo&video.html">Фото и видео</a></li>
-          <li class="site-navigation-item"><a href="state-map.html">Карта штата</a></li>
-          <li class="site-navigation-item"><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-item">
+            <a href="info.html">Информация</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="photo&video.html">Фото и видео</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="state-map.html">Карта штата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="hotels.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,8 +38,8 @@
 
       <section class="description-section">
         <div class="description-title">
-        <h2 class="description">Седона небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="reasons-paragraph">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="description">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="reasons-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
         <ul class="reasons">
@@ -150,16 +158,16 @@
             </button>
           </p>
           <p class="appointment-item">
-            <label for="adults">Взрослые:</label>
-            <span class="flex-input">
+            <label class="ai-adults" for="adults">Взрослые:</label>
+            <span class="flex-input fi-adult">
             <button class="button btn-minus btn-minus-adult" type="button" aria-label="Уменьшить количество"></button>
             <input class="flex-input-field adults-input" id="adults" type="number" name="adults" value="2" placeholder="0">
             <button class="button btn-plus btn-plus-adult" type="button" aria-label="Увеличить количество"></button>
-          </span>
+            </span>
           </p>
           <p class="appointment-item">
-            <label for="children">Дети:</label>
-            <span class="flex-input">
+            <label class="ai-children" for="children">Дети:</label>
+            <span class="flex-input fi-child">
             <button class="button btn-minus btn-minus-child" type="button"></button>
             <input class="flex-input-field children-input" id="children" type="number" name="children" value="0" placeholder="0">
             <button class="button btn-plus btn-plus-child" type="button"></button>

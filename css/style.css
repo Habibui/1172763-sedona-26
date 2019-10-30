@@ -10,6 +10,21 @@ body {
   text-transform: uppercase;
 }
 
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background-image: url("../../../../../Джавид/Desktop/Sedona\ Index.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1280px;
+  opacity: 0.5;
+  pointer-events: none;
+  }
+
 a {
   text-decoration: none;
 }
@@ -55,6 +70,7 @@ footer {
   width: 1200px;
   background-color: #ffffff;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-navigation {
@@ -114,13 +130,12 @@ footer {
   text-align: center;
   margin: 0 auto;
   background-repeat: no-repeat;
-  padding-top: 563px;
-  background-position: center 76px, center 506px, 0 -50px;
+  padding-top: 506px;
+  background-position: center 76px, center 450px, 0 -50px;
 }
 
 .description-section {
   background-color: #ffffff;
-  padding-top: 60px;
 }
 
 .description {
@@ -269,7 +284,7 @@ footer {
   width: 25px;
   height: 26px;
 
-  background-color: #f2f2f2;
+  background-color: transparent;
 }
 
 .btn-calendar-appointment {
@@ -279,7 +294,7 @@ footer {
   width: 25px;
   height: 26px;
 
-  background-color: #f2f2f2;
+  background-color: transparent;
 }
 
 .calendar-arrival {
@@ -691,6 +706,11 @@ body {
   padding-bottom: 22px;
 }
 
+.site-navigation-item a {
+  position: relative;
+  bottom: 5px;
+}
+
 .logo-link {
   position: absolute;
   top: 0;
@@ -722,6 +742,8 @@ body {
 .reasons {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .reason-item-white {
@@ -838,9 +860,25 @@ body {
   width: 50%;
 }
 
+.ai-children {
+  padding: 0;
+  margin: 0;
+  margin-left: 53px;
+}
+
 .flex-input {
   display: flex;
   width: 114px;
+  margin: 0;
+  padding: 0;
+}
+
+.fi-adult {
+  margin-left: 41px;
+}
+
+.fi-child {
+  margin-left: 27px;
 }
 
 .flex-input-field {
@@ -853,29 +891,56 @@ body {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
+  position: relative;
 }
 
-.btn-minus-line,
-.btn-plus-line {
-  content: "";
+.btn-minus::before, .btn-plus::before, .btn-plus::after {
+  content: '';
+  display: block;
+  background-color: #c6c6c6;
   position: absolute;
+  }
 
-  top: 28px;
-
+  .btn-minus::before {
+  top: 18px;
+  left: 13px;
   width: 12px;
   height: 3px;
+  }
 
-  background: rgba(0, 1, 1, 0.15);
-  /*transform: translate -50%;*/
-}
+  .btn-plus::after {
+  width: 3px;
+  height: 11px;
+  top: 14px;
+  left: 18px;
+  }
+
+  .btn-plus::before {
+  width: 11px;
+  height: 3px;
+  left: 14px;
+  top: 18px;
+  }
+
+  .btn-plus:hover::before,
+  .btn-plus:hover::after,
+  .btn-minus:hover::before {
+  background-color: #000000;
+  }
+
+  .btn-plus:active::before,
+  .btn-plus:active::after,
+  .btn-minus:active::before {
+  background-color: #81b3d2;
+  }
 
 .btn-minus-adult {
-  margin-left: 41px;
+  margin-left: 0;
   padding: 0;
 }
 
 .btn-minus-child {
-  margin-left: 27px;
+  margin-left: 0;
   padding: 0;
 }
 
