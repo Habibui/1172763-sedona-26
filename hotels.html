@@ -13,14 +13,21 @@
       <header class="main-header">
         <nav class="main-navigation">
             <a class="logo-link" href="index.html">
-                <img src="img/logo.svg"
-                class="logo" width="140" height="71" alt="Логотип Седоны">
+                <img src="img/logo.svg" class="logo" width="140" height="71" alt="Логотип Седоны">
             </a>
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-            <li class="site-navigation-item"><a href="photo&video.html">Фото и видео</a></li>
-            <li class="site-navigation-item"><a href="state-map.html">Карта штата</a></li>
-            <li class="site-navigation-item"><a>Гостиницы</a></li>
+            <li class="site-navigation-item">
+              <a href="info.html">Информация</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="photo&video.html">Фото и видео</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="state-map.html">Карта штата</a>
+            </li>
+            <li class="site-navigation-item">
+              <a>Гостиницы</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -32,17 +39,17 @@
         <fieldset class="form-filter-flex">
           <legend class="form-filter-legend">Инфраструктура:</legend>
             <ul class="form-filter-section">
-              <li class="form-filter-option">
+              <li class="form-filter-option option-one">
                 <input class="form-filter-input visually-hidden" type="checkbox" name="pool" id="pool-field" checked>
                 <label class="form-filter-label" for="pool-field">Бассейн</label>
               </li>
 
-              <li class="form-filter-option">
+              <li class="form-filter-option option-two">
                 <input class="form-filter-input visually-hidden" type="checkbox" name="parking" id="parking-field">
                 <label class="form-filter-label" for="parking-field">Парковка</label>
               </li>
 
-              <li class="form-filter-option">
+              <li class="form-filter-option option-three">
                 <input class="form-filter-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi-field">
                 <label class="form-filter-label" for="wi-fi-field">Wi-Fi</label>
               </li>
@@ -52,17 +59,17 @@
         <fieldset class="form-filter-flex">
           <legend  class="form-filter-legend">Тип жилья:</legend>
             <ul class="form-filter-section">
-              <li class="form-filter-option">
+              <li class="form-filter-option option-one">
                 <input class="form-filter-input visually-hidden" type="checkbox" name="hotels" id="hotels-field" checked>
                 <label class="form-filter-label" for="hotels-field">Гостиница</label>
               </li>
 
-              <li class="form-filter-option">
+              <li class="form-filter-option option-two">
                 <input class="form-filter-input visually-hidden" type="checkbox" name="motels" id="motels-field" checked>
                 <label class="form-filter-label" for="motels-field">Мотель</label>
               </li>
 
-              <li class="form-filter-option">
+              <li class="form-filter-option option-three">
                 <input class="form-filter-input visually-hidden" type="checkbox" name="appartments" id="appartments-field" checked>
                 <label class="form-filter-label" for="appartments-field">Аппартаметы</label>
               </li>
@@ -119,77 +126,81 @@
 
         <ul class="hotels-list-cards"><!--добавить цены и описание с картинками и кнопки-->
           <li class="flex-card">
-              <p class="cards-img">
-                <img src="img/hotel-picture-1.jpg"
-                class="hotel-picture" width="135" height="95" alt="фото гостиницы">
-              </p>
-              <div class="flex-description">
-              <h3><a href="" class="hotels-name">amara resort & spa</a></h3>
-              <div class="housing-cost">
-              <p class="housing-description">гостиница</p>
-              <p class="housing-description">от 4000 рублей</p>
+            <p class="cards-img">
+              <img src="img/hotel-picture-1.jpg" class="hotel-picture" width="135" height="90" alt="фото гостиницы">
+            </p>
+            <div class="flex-description">
+              <h3 class="hotels-title">
+                <a href="" class="hotels-name">amara resort & spa</a>
+              </h3>
+              <div class="housing-cost hotels-cost">
+                <p class="housing-description">гостиница</p>
+                <p class="housing-description">от 4000 р.</p>
               </div>
-              <p>
+
+              <p class="hotels-buttons">
                 <a href="" class="button button-blue">подробнее</a>
                 <a href="" class="button button-brown">забронировать</a>
               </p>
-              </div>
+            </div>
 
-              <div class="flex-rating">
+            <div class="flex-rating">
               <div class="four-stars" alt="гостиница 4 звезды">
                 <span class="visually-hidden">гостиница 4 звезды</span>
               </div>
-              <p class="rating">рейтинг: 8.5</p>
-              </div>
+              <p class="rating">рейтинг: 8,5</p>
+            </div>
           </li>
 
           <li class="flex-card">
-              <p class="cards-img">
-                <img src="img/hotel-picture-2.jpg"
-                class="hotel-picture" width="135" height="90" alt="фото мотеля">
-              </p>
-              <div class="flex-description">
-              <h3><a href="" class="hotels-name">desert quail inn</a></h3>
-              <div class="housing-cost">
-              <p class="housing-description">мотель</p>
-              <p class="housing-description">от 3000 рублей</p>
+            <p class="cards-img">
+              <img src="img/hotel-picture-2.jpg" class="hotel-picture" width="135" height="90" alt="фото мотеля">
+            </p>
+            <div class="flex-description">
+              <h3 class="hotels-title motels-title">
+                <a href="" class="hotels-name">desert quail inn</a>
+              </h3>
+              <div class="housing-cost motels-cost">
+                <p class="housing-description">мотель</p>
+                <p class="housing-description">от 3000 р.</p>
               </div>
-              <p>
+              <p class="hotels-buttons">
                 <a href="" class="button button-blue">подробнее</a>
                 <a href="" class="button button-brown">забронировать</a>
               </p>
-              </div>
+            </div>
 
-              <div class="flex-rating">
-                <div class="three-stars" alt="гостиница 3 звезды">
-                  <span class="visually-hidden">гостиница 3 звезды</span>
-                </div>
-              <p class="rating">рейтинг: 8.9</p>
+            <div class="flex-rating">
+              <div class="three-stars" alt="гостиница 3 звезды">
+                <span class="visually-hidden">гостиница 3 звезды</span>
               </div>
+              <p class="rating">рейтинг: 8,9</p>
+            </div>
           </li>
 
           <li class="flex-card">
               <p class="cards-img">
-                <img src="img/hotel-picture-3.jpg"
-                class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
+                <img src="img/hotel-picture-3.jpg" class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
               </p>
               <div class="flex-description">
-              <h3><a href="" class="hotels-name">villas at poco diablo</a></h3>
-                <div class="housing-cost">
-                <p class="housing-description">аппартаменты</p>
-                <p class="housing-description">от 2000 рублей</p>
+                <h3 class="hotels-title appartments-title">
+                  <a href="" class="hotels-name">villas at poco diablo</a>
+                </h3>
+                <div class="housing-cost appartments-cost">
+                  <p class="housing-description">апартаменты</p>
+                  <p class="housing-description">от 2000 р.</p>
                 </div>
-                <p>
+                <p class="hotels-buttons">
                   <a href="" class="button button-blue">подробнее</a>
                   <a href="" class="button button-brown">забронировать</a>
                 </p>
-              </div>
+            </div>
 
                 <div class="flex-rating">
                   <div class="two-stars" alt="гостиница 2 звезды">
                     <span class="visually-hidden">гостиница 2 звезды</span>
                   </div>
-                <p class="rating">рейтинг: 9.2</p>
+                <p class="rating">рейтинг: 9,2</p>
                 </div>
             </li>
         </ul>
