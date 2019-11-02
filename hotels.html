@@ -2,9 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Sedona</title>
+    <title>Hotels</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -98,30 +97,29 @@
       <div class="sort-flex">
         <p class="results">найдено: 3</p>
         <p class="sort">Сортировка:</p>
-          <ul class="criteria">
-            <div class="criteria-flex">
-            <li><a class="sort-link">По цене</a></li>
+        <ul class="criteria">
+          <div class="criteria-flex">
+            <li><a class="sort-link">По цене</a> </li>
             <li><a class="sort-link" href="">По типу</a></li>
             <li><a class="sort-link" href="">По рейтингу</a></li>
-            </div>
-          </ul>
+          </div>
+        </ul>
 
+        <div class="arrows">
+          <a class="link-up" href="">
+            <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 0L0 10h11z"/>
+            </svg>
+            <span class="visually-hidden">Сортировка по возрастанию</span>
+          </a>
 
-            <div class="arrows">
-              <a class="link-up" href="">
-                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path d="M5.5 0L0 10h11z"/>
-                </svg>
-                <span class="visually-hidden">Сортировка по возрастанию</span>
-              </a>
-
-              <a class="link-down">
-                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path d="M5.5 10L0 0h11"/>
-                </svg>
-                <span class="visually-hidden">Сортировка по убыванию</span>
-              </a>
-            </div>
+          <a class="link-down">
+            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L0 0h11"/>
+            </svg>
+            <span class="visually-hidden">Сортировка по убыванию</span>
+          </a>
+        </div>
       </div>
 
         <ul class="hotels-list-cards"><!--добавить цены и описание с картинками и кнопки-->
@@ -179,30 +177,30 @@
           </li>
 
           <li class="flex-card">
-              <p class="cards-img">
-                <img src="img/hotel-picture-3.jpg" class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
+            <p class="cards-img">
+              <img src="img/hotel-picture-3.jpg" class="hotel-picture" width="135" height="90" alt="фото аппартаментов">
+            </p>
+            <div class="flex-description">
+              <h3 class="hotels-title appartments-title">
+                <a href="" class="hotels-name">villas at poco diablo</a>
+              </h3>
+              <div class="housing-cost appartments-cost">
+                <p class="housing-description">апартаменты</p>
+                <p class="housing-description">от 2000 р.</p>
+              </div>
+              <p class="hotels-buttons">
+                <a href="" class="button button-blue">подробнее</a>
+                <a href="" class="button button-brown">забронировать</a>
               </p>
-              <div class="flex-description">
-                <h3 class="hotels-title appartments-title">
-                  <a href="" class="hotels-name">villas at poco diablo</a>
-                </h3>
-                <div class="housing-cost appartments-cost">
-                  <p class="housing-description">апартаменты</p>
-                  <p class="housing-description">от 2000 р.</p>
-                </div>
-                <p class="hotels-buttons">
-                  <a href="" class="button button-blue">подробнее</a>
-                  <a href="" class="button button-brown">забронировать</a>
-                </p>
             </div>
 
-                <div class="flex-rating">
-                  <div class="two-stars" alt="гостиница 2 звезды">
-                    <span class="visually-hidden">гостиница 2 звезды</span>
-                  </div>
-                <p class="rating">рейтинг: 9,2</p>
-                </div>
-            </li>
+            <div class="flex-rating">
+              <div class="two-stars" alt="гостиница 2 звезды">
+                <span class="visually-hidden">гостиница 2 звезды</span>
+              </div>
+              <p class="rating">рейтинг: 9,2</p>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
