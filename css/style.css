@@ -14,22 +14,6 @@ a {
   text-decoration: none;
 }
 
-label {
-  font: inherit;
-
-  font-size: 14px;
-  font-weight: 700;
-}
-
-input {
-  font: inherit;
-
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #f2f2f2;
-  border: none;
-}
-
 footer {
   font-size: 21px;
   line-height: 26px;
@@ -244,6 +228,11 @@ footer {
   background-color: #ffffff;
 }
 
+.searching-form label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .searching-form input {
   font-size: 14px;
   font-weight: 700;
@@ -293,6 +282,11 @@ footer {
 }
 
 .appointment-item-input {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+
   width: 346px;
   height: 38px;
   padding: 0;
@@ -944,6 +938,11 @@ body {
 
 
 .flex-input-field {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+
   width: 38px;
   padding-left: 16px;
 }
@@ -1129,6 +1128,7 @@ footer {
   display: inline-block;
 
   font-size: 14px;
+  font-weight: 700;
   line-height: 33px;
   vertical-align: top;
 
@@ -1143,6 +1143,11 @@ footer {
 }
 
 .price-controls input {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+
   width: 50px;
   margin: 0;
 
@@ -1277,6 +1282,10 @@ footer {
   margin: 0;
 
   border-top: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+.flex-card:nth-child(3n+3) {
+  border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
 
 .cards-img {
