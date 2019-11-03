@@ -86,6 +86,7 @@ footer {
 }
 
 .main {
+  display: block;
   background-image: url("../img/welcome.png"), url("../img/polygon.png"), url("../img/background-photo.jpg");
   text-align: center;
   margin: 0 auto;
