@@ -10,21 +10,6 @@ body {
   text-transform: uppercase;
 }
 
-body::before {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-content: '';
-background-image: url("../../../../Desktop/Sedona\ Hotels.png");
-background-repeat: no-repeat;
-background-position: center top;
-background-size: 1280px;
-opacity: 0.5;
-pointer-events: none;
-}
-
 a {
   text-decoration: none;
 }
