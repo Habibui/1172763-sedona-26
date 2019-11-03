@@ -10,6 +10,21 @@ body {
   text-transform: uppercase;
 }
 
+body::before {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+content: '';
+background-image: url("../../../../Desktop/Sedona\ Hotels.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: 1280px;
+opacity: 0.5;
+pointer-events: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -438,7 +453,7 @@ footer {
 }
 
 footer .created-by {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .website-by {
@@ -545,7 +560,7 @@ footer .created-by {
 
 .hotels-list {
   background-color: #ffffff;
-  padding-top: 31px;
+  padding-top: 34px;
 }
 
 .hotels-list ul {
@@ -671,7 +686,7 @@ footer .created-by {
 
   height: 17px;
 
-  margin-top: 1px;
+  /*margin-top: 1px;*/
   margin-left: 22px;
 }
 
@@ -683,7 +698,7 @@ footer .created-by {
 
   height: 17px;
 
-  margin-top: 3px;
+  /*margin-top: 3px;*/
   margin-left: 47px;
 }
 
@@ -695,7 +710,7 @@ footer .created-by {
 
   height: 17px;
 
-  margin-top: 7px;
+  /*margin-top: 7px;*/
   margin-left: 71px;
 }
 
@@ -1021,7 +1036,7 @@ footer {
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-top: 32px;
+  margin-top: 29px;
 }
 
 .social-networks-flex {
@@ -1055,7 +1070,7 @@ footer {
 
 .form-filter {
   display: flex;
-  padding: 27px 72px 31px 71px;
+  padding: 27px 72px 29px 72px;
 }
 
 .form-filter-flex {
@@ -1161,21 +1176,20 @@ footer {
 
 .range-controls {
   position: relative;
-
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .range-controls .scale {
   height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -1185,7 +1199,7 @@ footer {
   width: 20px;
   height: 20px;
 
-  background: #ababab;
+  background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -1193,7 +1207,7 @@ footer {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background-color: #1c4f80;
 }
 
 .range-toggle-min {
@@ -1214,7 +1228,7 @@ footer {
   color: #ffffff;
   text-transform: uppercase;
 
-  background: transparent;
+  background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
@@ -1223,7 +1237,7 @@ footer {
 .btn-transparent:hover {
   color: #000000;
 
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .sort-flex {
@@ -1273,13 +1287,13 @@ footer {
 .hotels-list-cards {
   padding: 0;
   margin: 0;
-  margin-top: 33px;
+  margin-top: 29px;
   margin-bottom: 2px;
 }
 
 .flex-card {
   display: flex;
-  padding: 25px 72px;
+  padding: 30px 72px 26px 72px;
   margin: 0;
 
   border-top: 1px solid rgba(0, 1, 1, 0.2);
@@ -1290,7 +1304,7 @@ footer {
 }
 
 .cards-img {
-  margin: 4px 30px 0 0;
+  margin: 0px 30px 0 0;
 }
 
 .flex-description {
@@ -1299,21 +1313,21 @@ footer {
 
 .hotels-title {
   margin: 0;
-  margin-top: -2px;
+  margin-top: -4px;
   margin-bottom: 9px;
   letter-spacing: 0.3px;
 }
 
 .motels-title {
   margin: 0;
-  margin-top: 0px;
+  margin-top: -4px;
   margin-bottom: 6px;
   letter-spacing: 0.3px;
 }
 
 .appartments-title {
   margin: 0;
-  margin-top: 3px;
+  margin-top: -4px;
   margin-bottom: 6px;
   letter-spacing: 0.27px;
 }
