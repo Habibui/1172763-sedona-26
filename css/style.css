@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-footer {
+.footer {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -469,6 +469,7 @@ footer .created-by {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: 0 -292px;
+  background-color: saddlebrown;
 }
 
 .form-filter-legend {
@@ -706,8 +707,6 @@ footer .created-by {
 /*Сеточные стили*/
 html,
 body {
-  min-width: 1280px;
-
   box-sizing: border-box;
 }
 
@@ -725,6 +724,7 @@ body {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   min-width: 1200px;
   min-height: 56px;
   padding: 0;
@@ -1007,7 +1007,7 @@ body {
   padding: 0;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -1092,7 +1092,7 @@ footer {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1105,7 +1105,7 @@ footer {
   position: relative;
 
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-size: 0;
 
@@ -1201,7 +1201,7 @@ footer {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .btn-transparent {
